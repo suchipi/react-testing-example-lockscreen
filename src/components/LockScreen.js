@@ -1,6 +1,7 @@
 import React, { PropTypes } from "react";
-import SlideToUnlock from "./SlideToUnlock";
 import ClockDisplay from "./ClockDisplay";
+import TopOverlay from "./TopOverlay";
+import SlideToUnlock from "./SlideToUnlock";
 
 export default class LockScreen extends React.Component {
   static propTypes = {
@@ -35,16 +36,14 @@ export default class LockScreen extends React.Component {
       >
         <ClockDisplay />
         {userInfoMessage ? (
-          <div
+          <TopOverlay
             style={{
-              color: "white",
-              marginBottom: "auto",
-              background: "linear-gradient(rgba(85, 85, 85, 0.498039), transparent)",
               padding: "2em",
+              marginBottom: "auto",
             }}
           >
             {userInfoMessage}
-          </div>
+          </TopOverlay>
         ) : null}
         <SlideToUnlock onSlide={onUnlocked} />
       </div>

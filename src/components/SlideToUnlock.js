@@ -171,6 +171,7 @@ export default class SlideToUnlock extends React.Component {
             height: 32,
             lineHeight: "32px",
             width: "calc(100% - 32px)",
+            maxWidth: "400px",
             textAlign: "center",
             backgroundColor: "rgba(0, 0, 0, 0.3)",
             borderRadius: 8,
