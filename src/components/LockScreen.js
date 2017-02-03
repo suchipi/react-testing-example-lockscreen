@@ -10,10 +10,6 @@ export default class LockScreen extends React.Component {
     onUnlocked: PropTypes.func,
   };
 
-  state = {
-    isFaded: false,
-  };
-
   render() {
     const {
       wallpaperPath,
