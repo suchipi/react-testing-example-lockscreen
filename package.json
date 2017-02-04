@@ -2,7 +2,7 @@
   "name": "react-testing-example",
   "version": "0.0.1",
   "homepage": "https://suchipi.github.io/react-testing-example-lockscreen",
-  "private": true,
+  "license": "MIT",
   "devDependencies": {
     "enzyme": "^2.7.1",
     "gh-pages": "^0.12.0",
